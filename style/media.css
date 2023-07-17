@@ -1,0 +1,123 @@
+@media(max-width: 1400px) {
+    
+}
+
+@media(max-width: 1200px) {
+    .nav-link {
+        font-size: 22px;
+    }
+
+    .bottom_title {
+        text-align: left;
+    }
+
+    .seasons-top,
+    .seasons-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        
+    }
+}
+
+@media(max-width: 991px) {
+    .nav-link:hover::after {
+        width: 80px;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 95px;
+        left: 0;
+    }
+
+    .main-banner {
+        height: 580px;
+    }
+
+    header {
+        height: 730px;
+    }
+
+    .logo {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 768px) {
+    .title {
+        width: 270px;
+    }
+
+    .youtube {
+        width: 270px;
+    }
+
+    .bottom_title,
+    .top_title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    .youtube_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 576px) {
+    .title {
+        width: 140px;
+    }
+
+    .youtube {
+        width: 140px;
+    }
+
+    .bottom_title,
+    .top_title {
+        font-size: 26px;
+        line-height: 44px;
+    }
+
+    .youtube_img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .text {
+        font-size: 6px;
+    }
+
+    .main-banner {
+        height: 300px;
+    }
+
+    header {
+        height: 430px;
+    }
+
+    .logo {
+        margin-top: 50px;
+    }
+
+    .ragnar {
+        font-size: 54px;
+    }
+
+    .footer_text {
+        font-size: 14px;
+    }
+
+    .main_characters {
+        padding: 50px 0;
+    }
+
+    .all_seasons {
+        padding: 20px 0;
+    }
+}

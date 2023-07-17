@@ -1,0 +1,279 @@
+@import url(./font.css);
+
+:root {
+  --RB: "Roboto-Bold";
+  --RR: "Roboto-Regular";
+  --RL: "Roboto-Light";
+  --body: #0e0e0e;
+  --text: #fff;
+  --title: #85ccdc;
+  --red: #600e09;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: var(--body);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../img/header\ img.png);
+  max-width: 1920px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 1030px;
+}
+
+.logo {
+  margin-top: 278px;
+  max-width: 880px;
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 200px;
+  height: 90px;
+  background-image: url(../img/logo.png);
+  background-size: 200px 95px;
+}
+
+.nav-link {
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--text);
+  font-weight: var(--RR);
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--title);
+  width: 0;
+  transition: width 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--title);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.title-col {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: var(--RR);
+  color: var(--text);
+}
+
+.left-col,
+.right-col {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: var(--RR);
+  color: var(--text);
+}
+
+.right-col {
+  max-width: 775px;
+  width: 100%;
+}
+
+.left-col {
+  width: 205px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.main-banner {
+  background-image: url(../img/big\ img.png);
+  max-width: 1920px;
+  width: 100%;
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  width: 580px;
+}
+
+.top_title,
+.bottom_title {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: var(--RL);
+  color: var(--title);
+}
+
+.bottom_title {
+  text-align: right;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: var(--RR);
+  color: var(--text);
+}
+
+.all_seasons-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: var(--RR);
+  color: var(--text);
+  margin-bottom: 172px;
+}
+
+.all_seasons {
+  padding: 100px 0;
+}
+
+.season1_img {
+  width: 320px;
+}
+
+.season {
+  position: relative;
+}
+
+.season_number {
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: var(--RB);
+  color: var(--red);
+  position: absolute;
+  top: -80px;
+  z-index: -1;
+}
+
+.season-6 {
+  z-index: +1;
+}
+
+.seasons-top {
+  margin-bottom: 100px;
+}
+
+.film_link {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: var(--RR);
+  color: var(--text);
+  padding: 12px 78px;
+  background-color: var(--body);
+  transition: 0.5s;
+  display: none;
+}
+
+.season1_img {
+  background-image: url(../img/season1.png);
+}
+
+.season1_img {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.season_img-item {
+  width: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 14, 14, 0.8);
+  transition: 0.1s;
+}
+
+.season:hover .season1_img .season_img-item .film_link {
+  display: flex;
+}
+
+.season:hover .season1_img .season_img-item {
+  width: 100%;
+  height: 100%;
+}
+
+.main_characters {
+  padding: 100px 0;
+}
+
+.main_characters-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: var(--RR);
+  color: var(--text);
+  margin-bottom: 100px;
+}
+
+.carousel {
+  max-width: 775px;
+  width: 100%;
+}
+
+.ragnar {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: var(--RL);
+  color: var(--title);
+  font-style: italic;
+}
+
+.ragnar_text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: var(--RR);
+  color: var(--text);
+  margin-top: 44px;
+}
+
+.footer_text {
+  padding: 14px 0;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: var(--RR);
+  color: var(--text);
+}
